@@ -431,6 +431,7 @@ while True:
     print("3. Crear reserva")
     print("4. Ver reservas")
     print("5. Salir")
+    print("6. Ver resumen del sistema")
 
     opcion = input(
         "\nSeleccione una opción: "
@@ -482,6 +483,12 @@ while True:
     # =============================================
     # OPCIÓN INVÁLIDA
     # =============================================
+
+    elif opcion == "6":
+        print("\n========== RESUMEN DEL SISTEMA ==========")
+        print("Clientes registrados:", len(clientes))
+        print("Servicios registrados:", len(servicios))
+        print("Reservas registradas:", len(reservas))
 
     else:
 
